@@ -43,5 +43,9 @@
 */
 
 bool taskX(int n, int m, int k) {
-    return false;
+    if (n <= 0 || m <= 0 || k <= 0 || k >= n * m) {
+        return false;
+    }
+
+    return k * n || k * m == 0;
 }
